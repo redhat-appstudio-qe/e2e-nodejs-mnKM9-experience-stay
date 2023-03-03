@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-huj0
+  namespace: e2e-demos-mxkq-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:655911f58cc61145cca747daac9784111371ce2fa8c06dfb7274e3e6339c008e
+        name: my-nodejs
+        resources: {}
+status: {}
